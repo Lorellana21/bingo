@@ -1,6 +1,6 @@
 `use strict`;
 
-/*Necesito*/
+
 
 // Un array de números para **Bolitas**: 
 const bingoNumbers = [];
@@ -15,6 +15,8 @@ let isPlaying = false;
 
 const newNumberBtn = document.querySelector('.js-new-number-btn');
 const playBtn = document.querySelector('.js-play-btn');
+//Un array de números para **Mi cartón**:
+const cardNumbers = [];
 
 // start page functions
 
@@ -42,8 +44,6 @@ const handlePlay = () => {
 
 //Genera los 20 números que deben aaprecer en el cartón:
 function generateNoRepeatedRandomNumbers(){
-  //Un array de números para **Mi cartón**:
-  const cardNumbers = [];
   for(let i = 0; i < 20; i++){
     const randomNumber = generateRandomNumber(100)
     cardNumbers.push(randomNumber);//Añade los numeros al array, cada numero aleatorio que genera la función "generate randomnumber"
