@@ -9,16 +9,38 @@
     <title>Ejercicio</title>
 </head>
 
-<body>
-    <h1>Bingo!!!</h1>
-    <button class="js-new-number-btn">Draw a ball</button>
-    <button class="js-play-btn">►</button>
-    (siempre están visibles y al final se ocultan)
-    <h2>Balls</h2>
-    <ul class="js-bingo-numbers numbers"></ul>
-    <h2>My card</h2>
-    <ul class="js-card-numbers card"></ul>
-    <p class="js-bingo-message message">Mensaje de han cantado bingo (siempre oculto)</p>
+<body class="page">
+    <header class="header">
+
+        <h1 class="header__title">Bingo!!!</h1>
+
+        <div>
+            <button class="js-new-number-btn header__btn">Draw a ball</button>
+            <button class="js-play-btn header__btn">Play</button>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="box">
+            <h3 class="box__title">Balls</h3>
+            <ul class="js-bingo-numbers box__numbers">
+            </ul>
+        </section>
+
+        <section class="box">
+            <h3 class="box__title">My card</h3>
+            <ul class="js-card-numbers box__numbers">
+                <!-- <li class="number">1</li>
+            <li class="number selected">2</li> -->
+            </ul>
+        </section>
+
+        <section>
+            <p class="js-bingo-message message hidden">Han cantado bingo!!!</p>
+        </section>
+
+    </main>
 
     <script src="./js/main.js"></script>
 </body>

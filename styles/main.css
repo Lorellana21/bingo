@@ -12,18 +12,14 @@
     font-size: 10px;
   }
   
-  body {
-    margin: 0;
-    padding: 0;
-    font-family: "Montserrat", sans-serif;
-    font-weight: bold;
-    background-image: linear-gradient(132deg, #F4D03F 0%, #16A085 100%);
-  }
   
   .page {
     margin: 0 auto;
     padding: 0 2rem;
     max-width: 768px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    background-image: linear-gradient(132deg, #F4D03F 0%, #16A085 100%);
   }
   
   /* header */
@@ -35,15 +31,11 @@
     padding-bottom: 1rem;
   }
   
-  .header__logo {
-    width: 15rem;
-  }
-  
   .header__title {
     font-family: "Pacifico", cursive;
     font-size: 6rem;
     font-weight: normal;
-    color: #14d9c4;
+    color: #a90ab8;
   }
   
   .header__btn {
@@ -51,17 +43,17 @@
     margin: 5px;
     padding: 5px 15px 3px;
     border-radius: 5px;
-    background: #14d9c4;
+    background: #a90ab8;
     border: solid 3px #15c3b1;
     font-weight: inherit;
     font-size: 16px;
     color: white;
-    transition: background 0.5s, border 0.5s;
+    transition: background-color 0.5s, border 0.5s;
   }
   
   .header__btn:hover {
     cursor: pointer;
-    background-color: #15c3b1;
+    background-color: #a90ab8;
     border-color: #14d9c4;
   }
   
@@ -70,7 +62,7 @@
   .box {
     margin-bottom: 10px;
     padding: 10px;
-    border: solid 6px #14d9c4;
+    border: solid 6px #a90ab8;
     border-radius: 4px;
     background: white;
   }
@@ -91,14 +83,14 @@
     margin: 5px;
     padding: 14px 0;
     width: 57px;
-    border: solid 6px #15c3b1;
+    border: solid 6px #94b30d;
     border-radius: 50%;
     text-align: center;
     font-size: 1.4rem;
   }
   
   .number.selected {
-    background: #14d9c4;
+    background: linear-gradient(132deg, #F4D03F 0%, #16A085 100%);
     color: white;
   }
   
@@ -119,11 +111,3 @@
   }
 
 
-.numbers, .card{
-    background-color: white;
-    border: solid 5px green;
-    height: 100px;
-}
-.message{
-    display: none;
-}

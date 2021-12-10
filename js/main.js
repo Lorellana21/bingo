@@ -23,7 +23,8 @@ const cardNumbers = [];
 const init = () => {
   console.log('Se ha iniciado la página');
   console.log('Generar 20 números (no repetidos) para Mi cartón');
-  generateNoRepeatedRandomNumbers();
+  generateRandomNumbers();
+  paintCardNumbers();
 };
 
 // dom listeners
@@ -43,7 +44,7 @@ const handlePlay = () => {
 
 
 //Genera los 20 números que deben aaprecer en el cartón:
-function generateNoRepeatedRandomNumbers(){
+function generateRandomNumbers(){
   for(let i = 0; i < 20; i++){
     const randomNumber = generateRandomNumber(100)
     cardNumbers.push(randomNumber);//Añade los numeros al array, cada numero aleatorio que genera la función "generate randomnumber"
@@ -86,6 +87,13 @@ const paintCardNumbers = () => {
 
   console.log('Repintar todos los números de Mi cartón');
   console.log('Repintar cada número de Mi cartón');
+
+  let htmlCode = "";
+  for ( const cardNumber of cardNumbers){
+    htmlCode += `<li class="number">${cardNumber}</li>`;
+  }
+  document.querySelector ('.js-card-numbers').innerHTML = htmlCode;
+
   console.log('¿El número de Mi cartón está en Bolitas?');
   if (true) {
     paintMatchedCardNumber();
