@@ -4,8 +4,6 @@
 
 To see that we have understood the phases of programming we are going to program a bingo!
 
-![titulo](https://user-images.githubusercontent.com/81922944/143602913-a359ab93-eecc-4bc3-86b6-88bb02b02b62.png)
-![Sin título](https://user-images.githubusercontent.com/81922944/143602936-412312cc-002c-443b-bf00-ef82477a1360.png)
 
 
 - When starting the page:
