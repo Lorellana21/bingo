@@ -16,10 +16,9 @@ let isPlaying = false;
 const newNumberBtn = document.querySelector('.js-new-number-btn');
 const playBtn = document.querySelector('.js-play-btn');
 //Un array de números para **Mi cartón**:
-const cardNumbers = [];
+let cardNumbers = [];
 
 // start page functions
-
 const init = () => {
   console.log('Se ha iniciado la página');
   console.log('Generar 20 números (no repetidos) para Mi cartón');
@@ -28,7 +27,6 @@ const init = () => {
 };
 
 // dom listeners
-
 const handleNewNumber = () => {
   console.log('Se ha pulsado en: Saca una bolita');
   playRound();
@@ -48,7 +46,10 @@ function generateRandomNumbers(){
   for(let i = 0; i < 20; i++){
     const randomNumber = generateRandomNumber(100)
     cardNumbers.push(randomNumber);//Añade los numeros al array, cada numero aleatorio que genera la función "generate randomnumber"
+    removeRepeatedNumber(cardNumbers);
   }
+  
+  
   console.log(cardNumbers);
 }
 
@@ -57,6 +58,13 @@ function generateRandomNumber() {
   return Math.ceil(Math.random() * 100);//Este "math.ceil" redondea los números
 }
 
+//para elminar el numero aleatorio repetido de mi array ed card numbers
+function removeRepeatedNumber(cardNumbers, item){
+let i = cardNumbers.indexOf(item);
+if( i !== -1){
+  cardNumbers.splice(i, 1);
+}
+}
 
 
 
