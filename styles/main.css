@@ -89,7 +89,14 @@
     font-size: 1.4rem;
   }
   
-  .number.selected {
+  .selected {
+    margin: 5px;
+    padding: 14px 0;
+    width: 57px;
+    border: solid 6px #94b30d;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 1.4rem;
     background: linear-gradient(132deg, #F4D03F 0%, #16A085 100%);
     color: white;
   }
